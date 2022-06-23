@@ -17,7 +17,6 @@ use App\Models\Listing;
 //all listings
 Route::get('/', function () {
     return view('listings',[
-    'heading'=>'lastest Listings',
     'listings' =>Listing::all()
 ]);
 });
